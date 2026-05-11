@@ -208,6 +208,67 @@
             line-height: 1.7;
         }
         
+        /* New 3-Part Hero Styles */
+        .hero-headline-main {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: 24px;
+            line-height: 1.1;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero-mechanism {
+            font-size: 1.5rem;
+            color: var(--text-light);
+            max-width: 800px;
+            margin: 0 auto 20px;
+            line-height: 1.5;
+        }
+        
+        .hero-outcome {
+            font-size: 1.25rem;
+            color: var(--text-gray);
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+        
+        .hero-proof {
+            font-size: 1rem;
+            color: var(--accent);
+            margin-bottom: 40px;
+        }
+        
+        .proof-stat {
+            font-weight: 700;
+            color: var(--text-light);
+        }
+        
+        .cta-micro {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            margin-top: 16px;
+            width: 100%;
+        }
+        
+        .hero-reassurance {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            flex-wrap: wrap;
+        }
+        
+        .hero-reassurance span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
         .hero-stats {
             display: flex;
             gap: 48px;
@@ -788,28 +849,29 @@
 
     <section class="hero">
         <div class="container">
-            <div class="hero-badge">Trusted by 50+ Marketing Agencies</div>
-            <h1>Hot Local Business Leads <span>Delivered to Your Inbox</span></h1>
-            <p class="hero-subtitle">We find, score, and enrich qualified business leads in your area. No more cold calling. No more wasted time. Just ready-to-buy prospects.</p>
+            <!-- 3-Part Headline Structure -->
+            <h1 class="hero-headline-main">YOUR COLD EMAILS ARE INVISIBLE</h1>
+            <p class="hero-mechanism">We scan every business in your city to find the ones with terrible reviews, no websites, and zero marketing—desperate for help.</p>
+            <p class="hero-outcome">So you can stop hunting and start closing while your competitors waste hours on LinkedIn.</p>
             
-            <div class="hero-stats">
-                <div class="stat">
-                    <div class="stat-number">2,500+</div>
-                    <div class="stat-label">Leads Delivered</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">94%</div>
-                    <div class="stat-label">Email Accuracy</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">3.5x</div>
-                    <div class="stat-label">Average ROI</div>
-                </div>
+            <!-- Proof Line -->
+            <div class="hero-proof">
+                <span class="proof-stat">40 hot leads</span> delivered last month • 
+                <span class="proof-stat">8 new clients</span> in 30 days • 
+                <span class="proof-stat">$28,000</span> in new revenue
             </div>
             
+            <!-- CTA Block -->
             <div class="hero-cta-group">
-                <a href="#pricing" class="btn-primary">Start Getting Leads →</a>
-                <a href="#how-it-works" class="btn-secondary">See How It Works</a>
+                <a href="#pricing" class="btn-primary">GET HOT LEADS NOW →</a>
+                <p class="cta-micro">No contracts. Cancel anytime. Exclusive territory protection.</p>
+            </div>
+            
+            <!-- Micro Reassurance -->
+            <div class="hero-reassurance">
+                <span>⚡ 94% email accuracy</span>
+                <span>🎯 Hot/Warm scored</span>
+                <span>🔒 Exclusive territories</span>
             </div>
         </div>
     </section>
